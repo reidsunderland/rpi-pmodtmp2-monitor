@@ -38,6 +38,6 @@ time = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 out = "{}, {}".format(time, temp)
 print(out)
 
-with open("temp_log.csv", mode='a') as f:
+with open("/home/pi/Documents/temp_log.csv", mode='a') as f:
     f.write(out + "\n")
 
