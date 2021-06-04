@@ -40,6 +40,8 @@ for i in range(NSAMPLES):
     # Calculate temp, add to running sum
     readingSum += (temp * res)
 
+    time.sleep(SAMPLE_DELAY)
+
 # Get time
 time = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 
