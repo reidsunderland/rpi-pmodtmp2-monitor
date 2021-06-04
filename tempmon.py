@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 import smbus
 
-NSAMPLES = 30 # number of samples to average for one reading
+NSAMPLES = 60 # number of samples to average for one reading
 SAMPLE_DELAY = 0.250 # seconds to delay
 
 addr = 0x4B # i2c address of temperature sensor
