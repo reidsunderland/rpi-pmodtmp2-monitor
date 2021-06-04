@@ -48,7 +48,7 @@ time = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
 # Get temperature average
 temp = readingSum / NSAMPLES
 
-out = "{}, {}".format(time, temp)
+out = "{}, {.3f}".format(time, temp)
 print(out)
 
 with open("/home/pi/Documents/temp_log.csv", mode='a') as f:
