@@ -43,12 +43,12 @@ for i in range(NSAMPLES):
     time.sleep(SAMPLE_DELAY)
 
 # Get time
-time = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+time = datetime.now().strftime("%Y-%m-%d %H:%M")
 
 # Get temperature average
 temp = readingSum / NSAMPLES
 
-out = "{}, {:.3f}".format(time, temp)
+out = "{}, {:.2f}".format(time, temp)
 print(out)
 
 with open("/home/pi/Documents/temp_log.csv", mode='a') as f:
